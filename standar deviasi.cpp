@@ -16,11 +16,11 @@ main ()
 	{
 		cout<<"Masukan angka (Xi) ke-"<<x<<" = "; cin>>a[x];
 		tot=tot+a[x];								//oprasi perhitungan jumlah angka
-		a_kuadrat[x]=pow(a[x],2);
-		tot1=tot1+a_kuadrat[x];
+		a_kuadrat[x]=pow(a[x],2);						//oprasi Xi^2
+		tot1=tot1+a_kuadrat[x];							//oprasi jumlah Xi^2
 	}
-	tot_kuadrat=pow(tot,2);
-	sd=sqrt(((i*tot1)-tot_kuadrat)/(i*(i-1)));
+	tot_kuadrat=pow(tot,2);								//opraasi total jumlah angka di kuadratkan
+	sd=sqrt(((i*tot1)-tot_kuadrat)/(i*(i-1)));					//penghitungan standar deviasi
 	cout<<"\n\n(jmlh Xi)	="<<tot;
 	cout<<"\n(jmlh Xi^2) 	="<<tot1;
 	cout<<"\n((jmlh Xi)^2)	="<<tot_kuadrat;
